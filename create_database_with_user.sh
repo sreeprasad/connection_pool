@@ -1,16 +1,13 @@
 #!/bin/bash
 
-# Variables
 DB_NAME="connection_pool_test"
 NEW_USER="new_connection_pool_test"
 NEW_PASSWORD="satapril2024$"
 
-# Connect to PostgreSQL and execute SQL commands to create the database
 PGPASSWORD=postgres_password psql -U postgres -h localhost -d postgres -c "
 CREATE DATABASE $DB_NAME;
 "
 
-# Check for success
 if [ $? -eq 0 ]; then
     echo "Database $DB_NAME created successfully."
     # Connect again to set up the user and privileges
