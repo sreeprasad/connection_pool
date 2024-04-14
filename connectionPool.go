@@ -81,7 +81,7 @@ func SimulateTooManyConnUsingPool() {
 	pool := NewConnectionPool(10, 5)
 	pool.initalizeConnections()
 	var wg sync.WaitGroup
-	for i := 0; i < 200; i++ {
+	for i := 0; i < 1000; i++ {
 		wg.Add(1)
 		go func(i int) {
 			defer wg.Done()

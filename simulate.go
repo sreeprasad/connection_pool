@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	SimulateTooManyConn()
-	//SimulateTooManyConnUsingPool()
+	//SimulateTooManyConn()
+	SimulateTooManyConnUsingPool()
 	fmt.Println("completed")
 
 }
