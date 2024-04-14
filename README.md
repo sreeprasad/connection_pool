@@ -2,8 +2,8 @@
 
 ### Steps
 
-Install postgres
-Create new user with privileges. Creating new user is not strictly required. I
+1.Install postgres
+2.Create new user with privileges by running `create_database_with_user.sh`. Creating new user is not strictly required. I
 added this for creating users specific to this project.
 
 ### Too many connection test
